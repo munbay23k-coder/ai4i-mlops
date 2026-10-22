@@ -1,0 +1,41 @@
+[project]
+name = "ai4i-mlops"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "munbay23k-coder", email = "munbay.23k@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.159.1",
+    "gradio>=6.30.0",
+    "joblib>=1.6.0",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "pydantic>=2.14.1",
+    "scikit-learn>=1.9.1",
+    "ucimlrepo>=0.0.7",
+]
+
+[project.scripts]
+ai4i-mlops = "ai4i_mlops:main"
+
+[build-system]
+requires = ["uv_build>=0.11.27,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "pytest>=9.1.1",
+    "seaborn>=0.13.2",
+]
+
+[tool.uv.workspace]
+members = [
+    "ai4i-mlops",
+]
