@@ -52,3 +52,7 @@ uv run python app/gradio_app.py
 
 - **API:** https://ai4i-mlops-api.onrender.com/docs
 - **Gradio:** https://ai4i-mlops-ui.onrender.com/
+
+## Evidencias
+
+[Ver PDF de evidencias del proyecto](docs/Evidencias_MLOps.pdf)
