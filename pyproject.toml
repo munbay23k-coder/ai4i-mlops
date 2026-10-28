@@ -1,7 +1,8 @@
+
 [project]
 name = "ai4i-mlops"
 version = "0.1.0"
-description = "Add your description here"
+description = "Predictive maintenance classification using Machine Learning and MLOps"
 readme = "README.md"
 authors = [
     { name = "munbay23k-coder", email = "munbay.23k@gmail.com" }
@@ -20,6 +21,8 @@ dependencies = [
 
 [project.scripts]
 ai4i-mlops = "ai4i_mlops:main"
+entrenar = "ai4i_mlops.train:main"
+predecir = "ai4i_mlops.predict:main"
 
 [build-system]
 requires = ["uv_build>=0.11.27,<0.12.0"]
@@ -35,12 +38,3 @@ dev = [
     "pytest>=9.1.1",
     "seaborn>=0.13.2",
 ]
-
-[tool.uv.workspace]
-members = [
-    "ai4i-mlops",
-]
-
-[project.scripts]
-entrenar = "ai4i_mlops.train:main"
-predecir = "ai4i_mlops.predict:main"
