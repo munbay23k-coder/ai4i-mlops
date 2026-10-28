@@ -1,0 +1,10 @@
+.venv/
+.git/
+.gradio/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+models/
+notebooks/
+.env
+.env.*

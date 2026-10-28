@@ -4,9 +4,23 @@ __pycache__/
 build/
 dist/
 wheels/
-*.egg-info
-.gradio/
+*.egg-info/
+
 # Virtual environments
-.venv
-# Artefactos modelo
+.venv/
+
+# Gradio
+.gradio/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Variables de entorno
+.env
+.env.*
+
+# Artefactos del modelo
 models/*
+
+# Pytest
+.pytest_cache/

@@ -40,3 +40,7 @@ dev = [
 members = [
     "ai4i-mlops",
 ]
+
+[project.scripts]
+entrenar = "ai4i_mlops.train:main"
+predecir = "ai4i_mlops.predict:main"
